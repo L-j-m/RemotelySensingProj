@@ -1,9 +1,9 @@
 # Introduction
 
-This is a book created from markdown and executable code.
-
-See @knuth84 for additional discussion of literate programming.
+This is a Quarto presentation for CASA0023 Remote Sensing class learning diary
 
 ```{r}
 1 + 1
 ```
+
+
