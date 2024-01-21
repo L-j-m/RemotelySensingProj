@@ -1,9 +1,7 @@
-# Introduction
+# Week 1
 
-This is a Quarto presentation for CASA0023 Remote Sensing class learning diary
+In this week, 
 
 ```{r}
 1 + 1
 ```
-
-

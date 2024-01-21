@@ -1,8 +1,10 @@
 {
-  "hash": "5489ae2156433bfb66243e2b6b1aa4c8",
+  "hash": "2a70da22364af95ee9f87597bbd8f21b",
   "result": {
-    "markdown": "# Introduction\n\nThis is a Quarto presentation for CASA0023 Remote Sensing class learning diary\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
-    "supporting": [],
+    "markdown": "# Week 1\n\nIn this week, \n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [
+      "intro_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

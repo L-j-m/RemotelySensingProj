@@ -3,3 +3,14 @@ title: "Week_2"
 ---
 
 ## Week_2
+
+```{r echo = FALSE}
+library(xaringanExtra)
+```
+
+
+```{r echo = FALSE, out.width='40%'}
+xaringanExtra::embed_xaringan(
+  url = "https://l-j-m.github.io/XaringanSlides/")
+
+```

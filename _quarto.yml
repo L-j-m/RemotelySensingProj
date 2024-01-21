@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 book:
-  title: "RSQuarto"
+  title: "Learning Diary of CASA0023 Remotely Sensing Cities and Environments 23/24"
   author: "Jiaming Li"
   date: "1/20/2024"
   chapters:
