@@ -1,0 +1,42 @@
+---
+title: "Week 3"
+---
+
+## Terms {.unnumbered}
+
+-   DOS (Dark Object Subtraction)
+-   DN (Digital Number): the storage form of some raw satellite imagery.
+-   .MTL file: store the data of Earth-sun distance.
+-   Radiance: how much light the sensor can receive (the radiation leaving the Earth).
+-   Reflectance: the ratio of light leaving a target to the light striking the target.
+    -   BOA (Bottom of Atmosphere) reflectance: reflected by the target on Earth surface.
+    -   TOA (Top of Atmosphere) reflectance: regard atm as the target, can be converted from TOA radiance (path radiance).
+-   NDVI (Normalised Difference Vegetation Index).
+-   NDMI (Normalized Difference Moisture Index).
+-   
+
+Workflow for data correction:
+
+Download Landsat data -\> Convert raw data (DN form) to radiance
+
+-\> Corrected radiance data to generate reflectance data -\>
+
+## Corrections
+
+There are four types of corrections:
+
+-   Geometric correction
+
+-   Atmospheric correction
+
+-   Orthorectification / Topographic correction
+
+-   Radiometric correction
+
+## Data enhancement
+
+Tasseled Cap function -\> Principal Component Analysis (PCA)
+
+The PCA is a process that transform the data which has reduced its dimensionality. This is to highlight certain feature of an image.
+
+### 

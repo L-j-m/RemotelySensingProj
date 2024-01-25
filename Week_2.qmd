@@ -1,8 +1,8 @@
 ---
-title: "Week_2"
+title: "Week 2"
 ---
 
-## Week_2
+## The Xaringan presentation
 
 ```{r echo = FALSE}
 library(xaringanExtra)
@@ -13,5 +13,14 @@ library(xaringanExtra)
 xaringanExtra::embed_xaringan(
   url = "https://l-j-m.github.io/XaringanSlides/",
   ratio = "4:3")
-
 ```
+
+
+
+
+
+
+
+
+
+

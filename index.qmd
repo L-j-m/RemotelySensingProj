@@ -1,9 +1,10 @@
 # Introduction {.unnumbered}
 
-This is a Quarto book.
+Hi, my name is Jiaming Li. During my undergraduate study, I was major in Architectural Environment Engineering. Basically it was being an engineer to design the heating and cooling system for a building. We did a lot of energy simulation for buildings, which aimed to further modify the building system to reduce its energy consumption while ensuring its performance.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+In my current study in Urban Spatial Science course, I found a different perspective to interpret buildings. Now we can see building in a higher level, in which the group of buildings form a city. Therefore, I can improve my understanding on building as a role within an urban area. 
 
-```{r}
-1 + 1
-```
+
+
+
+

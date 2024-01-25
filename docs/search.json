@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Learning Diary of CASA0023 Remotely Sensing Cities and Environments 23/24",
     "section": "",
-    "text": "Introduction\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+    "text": "Introduction\nHi, my name is Jiaming Li. During my undergraduate study, I was major in Architectural Environment Engineering. Basically it was being an engineer to design the heating and cooling system for a building. We did a lot of energy simulation for buildings, which aimed to further modify the building system to reduce its energy consumption while ensuring its performance.\nIn my current study in Urban Spatial Science course, I found a different perspective to interpret buildings. Now we can see building in a higher level, in which the group of buildings form a city. Therefore, I can improve my understanding on building as a role within an urban area."
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
     "title": "1  Week 1",
     "section": "",
-    "text": "In this week,\n\n1 + 1\n\n[1] 2"
+    "text": "Terms\n\nNIR (Near-infrared, which is used to detect vegetation)"
   },
   {
     "objectID": "Week_2.html#week_2",
@@ -26,5 +26,47 @@
     "title": "3  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Week_2.html#week-2",
+    "href": "Week_2.html#week-2",
+    "title": "2  Week 2",
+    "section": "2.1 Week 2",
+    "text": "2.1 Week 2"
+  },
+  {
+    "objectID": "Week_3.html",
+    "href": "Week_3.html",
+    "title": "3  Week 3",
+    "section": "",
+    "text": "4 Week 3"
+  },
+  {
+    "objectID": "Week_2.html#the-xaringan-presentation",
+    "href": "Week_2.html#the-xaringan-presentation",
+    "title": "2  Week 2",
+    "section": "2.1 The Xaringan presentation",
+    "text": "2.1 The Xaringan presentation"
+  },
+  {
+    "objectID": "Week_3.html#corrections",
+    "href": "Week_3.html#corrections",
+    "title": "3  Week 3",
+    "section": "3.1 Corrections",
+    "text": "3.1 Corrections\nThere are four types of corrections:\n\nGeometric correction\nAtmospheric correction\nOrthorectification / Topographic correction\nRadiometric correction"
+  },
+  {
+    "objectID": "Week_3.html#terms",
+    "href": "Week_3.html#terms",
+    "title": "3  Week 3",
+    "section": "Terms",
+    "text": "Terms\n\nDOS (Dark Object Subtraction)\nDN (Digital Number): the storage form of some raw satellite imagery.\n.MTL file: store the data of Earth-sun distance.\nRadiance: how much light the sensor can receive (the radiation leaving the Earth).\nReflectance: the ratio of light leaving a target to the light striking the target.\n\nBOA (Bottom of Atmosphere) reflectance: reflected by the target on Earth surface.\nTOA (Top of Atmosphere) reflectance: regard atm as the target, can be converted from TOA radiance (path radiance).\n\nNDVI (Normalised Difference Vegetation Index).\nNDMI (Normalized Difference Moisture Index).\n\n\nWorkflow for data correction:\nDownload Landsat data -&gt; Convert raw data (DN form) to radiance\n-&gt; Corrected radiance data to generate reflectance data -&gt;"
+  },
+  {
+    "objectID": "Week_3.html#data-enhancement",
+    "href": "Week_3.html#data-enhancement",
+    "title": "3  Week 3",
+    "section": "3.2 Data enhancement",
+    "text": "3.2 Data enhancement\nTasseled Cap function -&gt; Principal Component Analysis (PCA)\nThe PCA is a process that transform the data which has reduced its dimensionality. This is to highlight certain feature of an image.\n\n3.2.1"
   }
 ]
