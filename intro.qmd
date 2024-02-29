@@ -1,10 +1,12 @@
-# Week 1
+# Week 1 Introduction to Remote Sensing
 
-Terms
+## Summary
 
--   NIR (Near-infrared, which is used to detect vegetation)
+Remote sensing, or called Earth Observation (EO), refers to obtain information from a distance. Generally, satellites or drones are typical remote sensors, which are used to acquiring data of Earth ground.
 
-## Remote sensing data
+An advantage of remote sensing data is that it has large amount of data size, which update frequently (around every day to every 16 days). Therefore, it would be suitable for timely analysis the variation of city or building, and they could be observed in a longer time (years or decades).
+
+### Remote sensing data
 
 -   Sentinel:
 
@@ -14,4 +16,29 @@ Terms
 
     Collected by United States Geological Survey (USGS) and NASA.
 
-When doing the comparison of Sentinel and Landsat dataset, the image from Sentinel should be upscaled as the resolution of Sentinel RGB bands are 10 meter while the RGB bands from Landsat are 30 meter. When looking at the natural colors of images, we'll use B2, B3, and B4 in blue, green, and red pipes, therefore, the those bands should be upscaled from 10 meter to 30 meter.
+The sensor detecting Earth ground relies on electromagnetic radiation, and a key character of it is the wavelength (λ). It would determine the ability of sensors that penetrate through clouds or ground layers. For instance, for longer wavelength, they are less likely to be scattered by clouds, thus they're more likely to obtain data in a cloudy weather.
+
+In terms of the data, generally they are images. The color of an image data is formed by electromagnetic, or, it is a representation of information of targets on the Earth surface. In this case, how electromagnetic is expressed by color would be essential to understand the targets on the Earth surface, and we can change the math expression of the bands to make the color have different meaning.
+
+## Application
+
+## Reflection
+
+Some terms that might be useful:
+
+-   NIR (Near-infrared, which is used to detect vegetation)
+
+### Notes
+
+When doing the comparison of Sentinel and Landsat data set, the image from Sentinel should be up-scaled as the resolution of Sentinel RGB bands are 10 meter while the RGB bands from Landsat are 30 meter. When looking at the natural colors of images, we'll use B2, B3, and B4 in blue, green, and red pipes, therefore, the those bands should be up-scaled from 10 meter to 30 meter.
+
+The component of target within a pixel can be analyzed from Spectrum View (in SNAP), in which x axis is the Wavelength (nm) of bands, y axis is the percentage of reflectance (?). The table below shows the wavelength of each band:
+
+| Band         | Wavelength (nm) | Description                      |
+|--------------|-----------------|----------------------------------|
+| B1           | 443             | Ultra Blue (Coastal and Aerosol) |
+| B2           | 490             | Blue                             |
+| B3           | 560             | Green                            |
+| B4           | 665             | Red                              |
+| B5 - B8, B8a | 705 - 865       | Visible & Near Infrared (VNIR)   |
+| B9 - B12     | 940 - 2190      | Short Wave Infrared (SWIR)       |

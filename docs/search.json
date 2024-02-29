@@ -68,5 +68,19 @@
     "title": "3  Week 3",
     "section": "3.2 Data enhancement",
     "text": "3.2 Data enhancement\nTasseled Cap function -&gt; Principal Component Analysis (PCA)\nThe PCA is a process that transform the data which has reduced its dimensionality. This is to highlight certain feature of an image.\n\n3.2.1"
+  },
+  {
+    "objectID": "intro.html#remote-sensing-data",
+    "href": "intro.html#remote-sensing-data",
+    "title": "1  Week 1",
+    "section": "1.1 Remote sensing data",
+    "text": "1.1 Remote sensing data\n\nSentinel:\nCollected by European Space Agency (ESA)\nLandsat\nCollected by United States Geological Survey (USGS) and NASA.\n\nWhen doing the comparison of Sentinel and Landsat dataset, the image from Sentinel should be upscaled as the resolution of Sentinel RGB bands are 10 meter while the RGB bands from Landsat are 30 meter. When looking at the natural colors of images, we’ll use B2, B3, and B4 in blue, green, and red pipes, therefore, the those bands should be upscaled from 10 meter to 30 meter.\nThe color of an image is formed by electromegnetic, or, it is a representation of information of targets on the Earth surface. In this case, how electromegnetic is expressed by color would be essential to understand the targets on the Earth surface, and we can change the math expression of the bands to make the color have different meaning.\nThe component of target within a pixel can be analyzed from Spectrum View, in which x axis is the Wavelength (nm) of bands, y axis is the percentage of reflectance (?). The table below shows the wavelength of each band:\n\n\n\nBand\nWavelength (nm)\nDescription\n\n\n\n\nB1\n443\nUltra Blue (Coastal and Aerosol)\n\n\nB2\n490\nBlue\n\n\nB3\n560\nGreen\n\n\nB4\n665\nRed\n\n\nB5 - B8, B8a\n705 - 865\nVisible & Near Infrared (VNIR)\n\n\nB9 - B12\n940 - 2190\nShort Wave Infrared (SWIR)"
+  },
+  {
+    "objectID": "Week_2.html#reflection",
+    "href": "Week_2.html#reflection",
+    "title": "2  Week 2",
+    "section": "2.2 Reflection",
+    "text": "2.2 Reflection"
   }
 ]

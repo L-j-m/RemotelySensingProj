@@ -141,7 +141,13 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#remote-sensing-data" id="toc-remote-sensing-data" class="nav-link active" data-scroll-target="#remote-sensing-data"><span class="header-section-number">1.1</span> Remote sensing data</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -165,11 +171,63 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Terms</p>
 <ul>
-<li><p>NIR (Near-infrared, which is used to detect vegetation)</p></li>
-<li></li>
+<li>NIR (Near-infrared, which is used to detect vegetation)</li>
 </ul>
+<section id="remote-sensing-data" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="remote-sensing-data"><span class="header-section-number">1.1</span> Remote sensing data</h2>
+<ul>
+<li><p>Sentinel:</p>
+<p>Collected by European Space Agency (ESA)</p></li>
+<li><p>Landsat</p>
+<p>Collected by United States Geological Survey (USGS) and NASA.</p></li>
+</ul>
+<p>When doing the comparison of Sentinel and Landsat dataset, the image from Sentinel should be upscaled as the resolution of Sentinel RGB bands are 10 meter while the RGB bands from Landsat are 30 meter. When looking at the natural colors of images, we’ll use B2, B3, and B4 in blue, green, and red pipes, therefore, the those bands should be upscaled from 10 meter to 30 meter.</p>
+<p>The color of an image is formed by electromegnetic, or, it is a representation of information of targets on the Earth surface. In this case, how electromegnetic is expressed by color would be essential to understand the targets on the Earth surface, and we can change the math expression of the bands to make the color have different meaning.</p>
+<p>The component of target within a pixel can be analyzed from Spectrum View, in which x axis is the Wavelength (nm) of bands, y axis is the percentage of reflectance (?). The table below shows the wavelength of each band:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Band</th>
+<th>Wavelength (nm)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>B1</td>
+<td>443</td>
+<td>Ultra Blue (Coastal and Aerosol)</td>
+</tr>
+<tr class="even">
+<td>B2</td>
+<td>490</td>
+<td>Blue</td>
+</tr>
+<tr class="odd">
+<td>B3</td>
+<td>560</td>
+<td>Green</td>
+</tr>
+<tr class="even">
+<td>B4</td>
+<td>665</td>
+<td>Red</td>
+</tr>
+<tr class="odd">
+<td>B5 - B8, B8a</td>
+<td>705 - 865</td>
+<td>Visible &amp; Near Infrared (VNIR)</td>
+</tr>
+<tr class="even">
+<td>B9 - B12</td>
+<td>940 - 2190</td>
+<td>Short Wave Infrared (SWIR)</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

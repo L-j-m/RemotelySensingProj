@@ -8,19 +8,10 @@ title: "Week 2"
 library(xaringanExtra)
 ```
 
-
 ```{r echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(
   url = "https://l-j-m.github.io/XaringanSlides/",
   ratio = "4:3")
 ```
 
-
-
-
-
-
-
-
-
-
+## Reflection
