@@ -16,9 +16,27 @@ An advantage of remote sensing data is that it has large amount of data size, wh
 
     Collected by United States Geological Survey (USGS) and NASA.
 
+Format: generally raster.
+
+Resolutions: spatial (pixels), spectral (bands), temporal (days, years), radiometric (the ability of detecting the radiation difference. unit: 8 bit, 11 bit).
+
 The sensor detecting Earth ground relies on electromagnetic radiation, and a key character of it is the wavelength (λ). It would determine the ability of sensors that penetrate through clouds or ground layers. For instance, for longer wavelength, they are less likely to be scattered by clouds, thus they're more likely to obtain data in a cloudy weather.
 
 In terms of the data, generally they are images. The color of an image data is formed by electromagnetic, or, it is a representation of information of targets on the Earth surface. In this case, how electromagnetic is expressed by color would be essential to understand the targets on the Earth surface, and we can change the math expression of the bands to make the color have different meaning.
+
+### Interacting with ground surface
+
+-   Bidirectional Reflectance Distribution Function (BRDF): It's a function that describes the ratio of the reflectance light that viewer could receive and the source of light that illuminates the object.
+
+![Schematic plot of reflectance, the amount of reflected light would be less or equal to the incoming light ([Wynn, 2000](https://www.cs.princeton.edu/courses/archive/fall06/cos526/tmp/wynn.pdf))](Screenshot%202024-03-01%20at%2015.41.50.png){fig-align="center" width="537"}
+
+The two types below is more about SAR data.
+
+-   Polarization: This refers to the deflection of signals. There are two plane of electromagnetic signal: horizontal and vertical. When the signal is polarized, the direction of electromagnetic oscillation may change.
+
+-   Fluoresence: The wavelength of radiation would change after arriving the target.
+
+### Result of Practical 1
 
 ## Application
 
