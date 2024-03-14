@@ -11,6 +11,8 @@ book:
     - intro.qmd
     - Week_2.qmd
     - Week_3.qmd
+    - Week_4.qmd
+    - GEE.qmd
     - summary.qmd
     - references.qmd
 

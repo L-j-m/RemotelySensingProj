@@ -1,0 +1,41 @@
+---
+title: "GEE"
+---
+
+# Google Earth Engine
+
+## Summary
+
+The Google Earth Engine (GEE) is an online geospatial platform that allow geoanalyst to access Google server to do the spatial analysis.
+
+As the platform has a large remote sensing database, our computer doesn't have to actually load the data when running the code, instead, it could call the data as a proxy in the code script, which save the room in the local computer.
+
+### Object
+
+The object in GEE is like the data structures in other programming language. Each object belongs to specific class, and each class has its specific functions (methods).
+
+### Data process in GEE
+
+GEE can filter specific image from image collections by its date, and clip the map to generate targeted study area. It can also do texture analysis and PCA.
+
+### PCA in GEE
+
+The result of PCA in GEE illustrate that there are two main geographic components in this region, as the first two PCs added up to around 93% of variance which is used to describe the importance of the geographical data.
+
+![The PCA result in Delhi](Screenshot 2024-03-14 at 12.45.35.png){fig-align="center" width="579"}
+
+![The percentage of variance of each PC](Screenshot 2024-03-14 at 12.52.19.png){fig-align="center" width="167"}
+
+## Application
+
+### Global Water Watch
+
+This project allows globally access, which aims to share the information of small and median water reservoirs. They argued that water resource is crucial from living, but more than half of population in the world are in the countries that share river basin with other countries. This means, the competition of water use between countries would potentially increase the conflict, therefore it is more important to break information barriers and co-manage the water resource (source: [GWW](https://www.globalwaterwatch.earth/blog/four-ways-open-reservoir-data-can-support-transboundary-peacekeeping)).
+
+### 
+
+## Reflection
+
+### Loop vs. Map
+
+Since GEE use JavaScript to edit the code, using `map` function to do the iteration could be more efficient in terms of code writing and code running. By using `map`, we don't have to count the number of objects (images) in the collection, but it will apply the function to each object. [Crites (2018)](https://medium.com/@ExplosionPills/map-vs-for-loop-2b4ce659fb03) argued that it's called "true iteration", though I don't think so, as both function could achieve the same result. However, using `map` can actually make the code cleaner.
