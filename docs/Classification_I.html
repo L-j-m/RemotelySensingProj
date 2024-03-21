@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning Diary of CASA0023 Remotely Sensing Cities and Environments 23/24 - 3&nbsp; Week 3</title>
+<title>Learning Diary of CASA0023 Remotely Sensing Cities and Environments 23/24 - 6&nbsp; Classification_I</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Week_4.html" rel="next">
-<link href="./Week_2.html" rel="prev">
+<link href="./Classification_II.html" rel="next">
+<link href="./GEE.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week_3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Classification_I.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification_I</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -119,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Week_3.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Week_3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3</span></span></a>
   </div>
 </li>
@@ -137,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Classification_I.html" class="sidebar-item-text sidebar-link">
+  <a href="./Classification_I.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification_I</span></span></a>
   </div>
 </li>
@@ -175,24 +175,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#terms" id="toc-terms" class="nav-link active" data-scroll-target="#terms">Terms</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#radiance-reflectance" id="toc-radiance-reflectance" class="nav-link" data-scroll-target="#radiance-reflectance"><span class="header-section-number">3.1.1</span> Radiance &amp; Reflectance</a></li>
-  <li><a href="#correction" id="toc-correction" class="nav-link" data-scroll-target="#correction"><span class="header-section-number">3.1.2</span> Correction</a></li>
-  <li><a href="#data-enhancement" id="toc-data-enhancement" class="nav-link" data-scroll-target="#data-enhancement"><span class="header-section-number">3.1.3</span> Data enhancement</a></li>
+  <li><a href="#terms" id="toc-terms" class="nav-link" data-scroll-target="#terms"><span class="header-section-number">6.1.1</span> Terms</a></li>
+  <li><a href="#how-classified-data-could-be-used" id="toc-how-classified-data-could-be-used" class="nav-link" data-scroll-target="#how-classified-data-could-be-used"><span class="header-section-number">6.1.2</span> How classified data could be used</a></li>
+  <li><a href="#machine-leaning-in-remote-sensing" id="toc-machine-leaning-in-remote-sensing" class="nav-link" data-scroll-target="#machine-leaning-in-remote-sensing"><span class="header-section-number">6.1.3</span> Machine Leaning in Remote Sensing</a></li>
+  <li><a href="#cart" id="toc-cart" class="nav-link" data-scroll-target="#cart"><span class="header-section-number">6.1.4</span> CART</a></li>
+  <li><a href="#random-forest" id="toc-random-forest" class="nav-link" data-scroll-target="#random-forest"><span class="header-section-number">6.1.5</span> Random Forest</a></li>
+  <li><a href="#support-vector-machine" id="toc-support-vector-machine" class="nav-link" data-scroll-target="#support-vector-machine"><span class="header-section-number">6.1.6</span> Support Vector Machine</a></li>
+  <li><a href="#practical-result" id="toc-practical-result" class="nav-link" data-scroll-target="#practical-result"><span class="header-section-number">6.1.7</span> Practical result</a></li>
   </ul></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">3.2</span> </a>
-  <ul class="collapse">
-  <li><a href="#data-pre-process" id="toc-data-pre-process" class="nav-link" data-scroll-target="#data-pre-process"><span class="header-section-number">3.2.1</span> Data Pre-process</a></li>
-  <li><a href="#information-enhancement" id="toc-information-enhancement" class="nav-link" data-scroll-target="#information-enhancement"><span class="header-section-number">3.2.2</span> Information Enhancement</a></li>
-  </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">3.3</span> Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.4</span> Reflection</a>
-  <ul class="collapse">
-  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">3.4.1</span> Reference</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"><span class="header-section-number">3.4.2</span> </a></li>
-  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">6.2</span> Application</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">6.3</span> </a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.4</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -201,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification_I</span></h1>
 </div>
 
 
@@ -216,127 +211,103 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="terms" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="terms">Terms</h2>
+<section id="summary" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
+<section id="terms" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="terms"><span class="header-section-number">6.1.1</span> Terms</h3>
+<p>LULC: Land Use &amp; Land Cover</p>
+<p>LST: Land Surface Temperature</p>
+<p>MAP: Major Air Pollutants</p>
+<p>CART: Classification and Regression Trees</p>
+<p>RF: Random Forest</p>
+</section>
+<section id="how-classified-data-could-be-used" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="how-classified-data-could-be-used"><span class="header-section-number">6.1.2</span> How classified data could be used</h3>
 <ul>
-<li>.MTL file: store the data of Earth-sun distance.</li>
-<li>NDVI (Normalised Difference Vegetation Index).</li>
-<li>NDMI (Normalized Difference Moisture Index).</li>
+<li><p>Urban expansion</p></li>
+<li><p>Air pollution</p></li>
+<li><p>LULC</p></li>
+<li><p>Forest monitoring (illegal logging; forest fire)</p></li>
 </ul>
 </section>
-<section id="summary" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
-<p>The process of remote sensing based on three essential components: light sources (illuminentes), target (Earth ground), and sensors. The light source could be the same as the sensors (active sensor, SAR).</p>
-<p>To store the information of targets, the radiance would be “translated” into the Digital Number (DN), which is the raw data of ground information. Those raw data would be combined with theirs location, and then it could form the map. (source: <a href="https://ecampusontario.pressbooks.pub/remotesensing/chapter/chapter-3-calculations-of-toa-radiance-and-toa-reflectance/">OpenLibrary</a>)</p>
-<section id="radiance-reflectance" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="radiance-reflectance"><span class="header-section-number">3.1.1</span> Radiance &amp; Reflectance</h3>
-<p>The radiance is used to describe the light that received by sensors, while reflectance relates to the properties of the targets.</p>
+<section id="machine-leaning-in-remote-sensing" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="machine-leaning-in-remote-sensing"><span class="header-section-number">6.1.3</span> Machine Leaning in Remote Sensing</h3>
+<p>The application of machine learning in remote sensing is a kind of inductive learning, which import the knowledge from human (expert) to an algorithm system, and it could iteratively generate advice for particular problem. Essentially, the machine learning is to help making decision repeatedly. To simplify, regression could be a type of machine learning, as it can obtain the information from the fitted data, and than it can be used to make prediction based on the fitted data.</p>
+</section>
+<section id="cart" class="level3" data-number="6.1.4">
+<h3 data-number="6.1.4" class="anchored" data-anchor-id="cart"><span class="header-section-number">6.1.4</span> CART</h3>
+<p>The CART comprised of classification trees and regression trees.</p>
 <ul>
-<li>Radiance: how much light the sensor can receive (the radiation leaving the Earth).</li>
-<li>Reflectance: the ratio of light leaving a target to the light striking the target.
-<ul>
-<li>BOA (Bottom of Atmosphere) reflectance: reflected by the target on Earth surface.</li>
-<li>TOA (Top of Atmosphere) reflectance: regard atm as the target, can be converted from TOA radiance (path radiance).</li>
-</ul></li>
+<li><p>Classification tree: Classify the data into different discrete categories (predict category)</p></li>
+<li><p>Regression tree: subset continuous data and do the regression separately (predict value, or value range)</p></li>
 </ul>
+<p>To decide which variable should be used in the top of a classification tree, the Gini impurity of each variable should be calculated, and that with the lowest Gini impurity should be selected. Then, each extension of decision tree (adding the height) is to reduce the impurity of a branch. In this process, we can also compare the impurity of the rest of variables and repeat the first step.</p>
+<p>As for regression tree, there is a similar impurity but it’s measured by the residual of values. We can make a plot of sum of squared residuals (SSR) verses threshold to find the threshold with the lowest SSR, then create the tree. However, since the data set of regression tree is continue and we can’t keep finding the lowest SSR in each branch, therefore, to prevent overfitting, we could set a certain number of observations that would stop the division.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshot 2024-03-16 at 02.33.23.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">plot of sum of squared residuals (SSR) verses threshold, from <a href="https://www.youtube.com/watch?v=g9c66TUylZ4">SatQuest</a></figcaption>
+</figure>
+</div>
 </section>
-<section id="correction" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="correction"><span class="header-section-number">3.1.2</span> Correction</h3>
-<p>The accuracy of remote sensing data may have its limit due to several reasons, such as the relative position between satellites and ground (view angle), atmospheric scattering, property of instruments. Therefore, we need to do the corrections before analyzing the data.</p>
-<p>There are four types of corrections:</p>
+<section id="random-forest" class="level3" data-number="6.1.5">
+<h3 data-number="6.1.5" class="anchored" data-anchor-id="random-forest"><span class="header-section-number">6.1.5</span> Random Forest</h3>
+<p>This algorithm could be concluded as <em>Bagging,</em> which means bootstrapping the data and using aggregate to make a decision (b + agg = bagging). Since a part of (about 1/3) data would be omitted in the first bagging process, those are called Out-of-Bag data, and these data would be used to test the accuracy of each tree that produced by random forest.</p>
+</section>
+<section id="support-vector-machine" class="level3" data-number="6.1.6">
+<h3 data-number="6.1.6" class="anchored" data-anchor-id="support-vector-machine"><span class="header-section-number">6.1.6</span> Support Vector Machine</h3>
+<p>The Support Vector Machine (SVM) derives from Support Vector Classifier, which is a threshold that divide data into two categories in one-dimension. In terms of SVM, the idea is to add dimension to the data, so that a mixed up dataset can also be classified. However, in effect the data wasn’t actually transformed into a higher dimension due to computational limitation, therefore, it is using either of two kernel functions: polynomial kernel or radial kernel, to do the <em>kernel trick.</em> In other words, it is to use mathemmtical techniques to reduce computational complexity. (sounds confused but it’s true!)</p>
+</section>
+<section id="practical-result" class="level3" data-number="6.1.7">
+<h3 data-number="6.1.7" class="anchored" data-anchor-id="practical-result"><span class="header-section-number">6.1.7</span> Practical result</h3>
+<p>Since GEE allows limit elements in each FeatureCollection, I reduce to two types of landcover for the classification. The figure below demonstrates the result and accuracy, using pixel as training data and RF as the algorithm.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshot 2024-03-19 at 16.00.01.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">The result of two landcovers (low urban building and bare earth); blue refers to buildings, pink is the bare earth</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshot 2024-03-19 at 15.24.05.png" class="img-fluid figure-img" width="449"></p>
+<figcaption class="figure-caption">The overall accuracy and consumer accuracy; 1 is low urban building, 2 is bare earth</figcaption>
+</figure>
+</div>
+<p>In this classification, the useful result might be the classification of bare earth, because this is a kind of binary classification so the type of land cover would be either one of the two types. Therefore, those pixels that are more similar to the buildings would be classified as low urban building, though it might not actually is.</p>
+<p>To improve this problem and locate the place that actually is its type, I created a third class which is used for distinguish other two classes of land cover.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshot 2024-03-19 at 15.50.42.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">The result with three types of land cover, blue refers to buildings, pink is the bare earth, and pale is grass or forest. It shows that most of area in Shenzhen are urban, mixed with some underdeveloped bare earth, and the green are mainly located in the middle of west part and the south east part.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshot 2024-03-19 at 15.55.08.png" class="img-fluid figure-img" width="398"></p>
+<figcaption class="figure-caption">The accuracy of three-class classification</figcaption>
+</figure>
+</div>
+<p>The overall accuracy seems higher than the previous one, but there is an over-fitted class, which is the green area, so this is a fake high accuracy. Nevertheless, our purpose is to separate non-building and non-bare-earth area, so it is done well. The reason for over-fitting is that the area I selected for training green was the grass on the school playground, which has limit pixels. Therefore, in the train-test-split process, those pixel could not be well separated.</p>
+</section>
+</section>
+<section id="application" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
+<p>Essentially, the classification technique in remote sensing is to assign the land cover type to image pixels (<a href="https://gisgeography.com/image-classification-techniques-remote-sensing/">GISGeography</a>). There are generally three types of classifications:</p>
 <ul>
-<li><p>Geometric correction</p></li>
-<li><p>Atmospheric correction</p></li>
-<li><p>Orthorectification / Topographic correction</p></li>
-<li><p>Radiometric correction</p></li>
+<li><p>Unsupervised classification</p></li>
+<li><p>Supervised classification</p></li>
+<li><p>Object-Based image analysis (OBIA)</p></li>
 </ul>
-<p>A useful atmospheric correction called Dark Object Subtraction (DOS). The basic assumption in the algorithm is that the darkest pixel in the image should not have any light. Thus, any reflectance from this pixel should caused by the atmospheric. As those light doesn’t achieve the ground but being reflected to the sensors. Therefore, all pixel should subtract this impact.</p>
+<p>The first two is used for low spatial resolution images, and the third is used for high spatial resolution images.</p>
 </section>
-<section id="data-enhancement" class="level3" data-number="3.1.3">
-<h3 data-number="3.1.3" class="anchored" data-anchor-id="data-enhancement"><span class="header-section-number">3.1.3</span> Data enhancement</h3>
-<p>Tasseled Cap function -&gt; Principal Component Analysis (PCA)</p>
-<p>The PCA is a process that transform the data which has reduced its dimensionality. This is to highlight certain feature of an image.</p>
+<section id="section" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="section"><span class="header-section-number">6.3</span> </h2>
 </section>
-</section>
-<section id="section" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="section"><span class="header-section-number">3.2</span> </h2>
-<section id="data-pre-process" class="level3" data-number="3.2.1">
-<h3 data-number="3.2.1" class="anchored" data-anchor-id="data-pre-process"><span class="header-section-number">3.2.1</span> Data Pre-process</h3>
-<p>A problem of remote sensing data is that the area of one image may not cover the entire study area, as the satellites are moving relative to the ground and scan the land square by square. The date of different data square would be varied. Therefore, to obtain the ground information of whole study area, the data should be accessed over a period of time. Then, the images should be merged together to form the targeted area.</p>
-<p>The quality of remote sensing data are tired, which would be checked in <a href="https://www.usgs.gov/media/images/landsat-level-2-and-level-3-science-products">here</a>.</p>
-<p>In this study, the ground information of Cape Town would be explored.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Screenshot 2024-03-08 at 16.58.25.png" class="img-fluid figure-img" width="564"></p>
-<figcaption class="figure-caption">A screen shot on USGS website when capturing the data in Cape Town</figcaption>
-</figure>
-</div>
-<p>As shown in the figure, two square of remote sensing data would be used. There is an overlapped area between the two data set, and it should be eliminated in the merging process (called Mosaicking in remote sensing). The merging process is basically calculate the average value from different data square for the overlapped area. As the study area may not precisely locate within the square in the selected time period, this is a compromise for the provided data.</p>
-</section>
-<section id="information-enhancement" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="information-enhancement"><span class="header-section-number">3.2.2</span> Information Enhancement</h3>
-<p>The remote sensing data contains lots of information, selecting and combining those information is important for study what we focus on. Using Normalised Difference Vegetation Index (NDVI) as an example to show how the combination of bands could generate useful information.</p>
-<p>The equation of NDVI is: NDVI = (NIR - Red) / (NIR + Red)</p>
-<p>In Landsat data set, it is: NDVI = (B5 - B4) / (B5 + B4)</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="nvdi1.png" class="img-fluid figure-img" width="463"></p>
-<figcaption class="figure-caption">The result of NVDI plot in the targeted region</figcaption>
-</figure>
-</div>
-<p>The value of NVDI indicate the component or state of the plants. If the NVDI &gt; 0.2, it represents the area with leaf; if the NVDI &gt; 0.6, it represents healthier leaf.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Screenshot 2024-03-08 at 18.07.51.png" class="img-fluid figure-img" width="265"></p>
-</figure>
-</div>
-<p>According to the division, the leaf condition could be detected in Cape Town:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="nvdi0.2.png" class="img-fluid figure-img" width="385"></p>
-<figcaption class="figure-caption">NVDI &gt; 0.2</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="nvdi0.6.png" class="img-fluid figure-img" width="388"></p>
-<figcaption class="figure-caption">NVDI &gt; 0.6</figcaption>
-</figure>
-</div>
-<p>The figures show that few health leaf in the Cape Town, probably because the time period of the data is around May, when it’s close to winter in the Southern Hemisphere.</p>
-</section>
-</section>
-<section id="application" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="application"><span class="header-section-number">3.3</span> Application</h2>
-<p>PCA is a useful tool to reduce the noise for remote sensing data. <a href="https://www.tandfonline.com/doi/full/10.1080/02564602.2020.1740615?casa_token=F3iyWCbKBg8AAAAA%3Ax_TCwBe5_B3Ivy1knsMABOXv2ODgUYbqDRcfUs7gjgKPoyXzjxErPL8q2bCjU7a2TeLzHxieg8DiDQ">Uddin, Mamun, &amp; Hossain (2021)</a> concluded that PCA-based feature reduction could be efficient for hyperspectral image (<a href="https://www.nireos.com/hyperspectral-imaging/">HSI</a>) classification, and they assessed the performance by using a Support Vector Machine (SVM) classifier. Since HSI contains more bands than normal color images, reduce uneccessary information would enhance the accuracy of classification.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Screenshot 2024-03-21 at 03.02.06.png" class="img-fluid figure-img" width="600"></p>
-<figcaption class="figure-caption">The workflow for PCA-based HSI classification (<a href="https://www.tandfonline.com/doi/full/10.1080/02564602.2020.1740615?casa_token=F3iyWCbKBg8AAAAA%3Ax_TCwBe5_B3Ivy1knsMABOXv2ODgUYbqDRcfUs7gjgKPoyXzjxErPL8q2bCjU7a2TeLzHxieg8DiDQ">Uddin, Mamun, &amp; Hossain, 2021</a>)</figcaption>
-</figure>
-</div>
-<p>However, only two dataset they used for analysis might not be sufficient, as particular place might has its occasionality in terms of atmosphere condition, surface structure, etc.</p>
-</section>
-<section id="reflection" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.4</span> Reflection</h2>
-<p>There are other ways to process and enhance the remote sensing data, and substantially they are used to reduce the amount of data.</p>
-<p>For example, using moving windows to filter the data, essentially, it’s to increase the contrast of the image while reducing the noise pixels.</p>
-<p>Comparing to directly process the data, Principle Component Analysis (PCA) is a more advanced, or abstract technique that replace the variables by their correlations. Then, using the variation in each fitting line, it could calculate the importance of each correlation. Essentially, PCA could be used to reduce the dimension of data. I found <a href="https://grantkim94.medium.com/cracking-principal-components-analysis-pca-part-1-1372736ebac7">Kim (2022)</a> explained the PCA very well. He suggested that the process of PCA likes an orthorectification correction, and those dimensions in which data has not variation should be filtered out.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="1_NG0-jH0M-va1Uk-llps-wQ.webp" class="img-fluid figure-img" width="496"></p>
-<figcaption class="figure-caption">The data has few variation in Z axis, therefore, Z dimension could be subtracted</figcaption>
-</figure>
-</div>
-<section id="reference" class="level3" data-number="3.4.1">
-<h3 data-number="3.4.1" class="anchored" data-anchor-id="reference"><span class="header-section-number">3.4.1</span> Reference</h3>
-<p>Uddin, M.P., Mamun, M.A.&nbsp;and Hossain, M.A., 2021. PCA-based feature reduction for hyperspectral remote sensing image classification. <em>IETE Technical Review</em>, <em>38</em>(4), pp.377-396.</p>
-</section>
-<section id="section-1" class="level3" data-number="3.4.2">
-<h3 data-number="3.4.2" class="anchored" data-anchor-id="section-1"><span class="header-section-number">3.4.2</span> </h3>
+<section id="reflection" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.4</span> Reflection</h2>
+<p>I found <a href="https://www.youtube.com/@statquest">StatQuest</a> is a really, really helpful channel which solve nearly all of my questions, and the author even go deeper for that to explain more clearly.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -575,13 +546,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Week_2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2</span></span>
+      <a href="./GEE.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GEE</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Week_4.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week_4 Policy</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Classification_II.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification_II</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

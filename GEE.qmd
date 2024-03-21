@@ -22,20 +22,42 @@ GEE can filter specific image from image collections by its date, and clip the m
 
 The result of PCA in GEE illustrate that there are two main geographic components in this region, as the first two PCs added up to around 93% of variance which is used to describe the importance of the geographical data.
 
-![The PCA result in Delhi](Screenshot 2024-03-14 at 12.45.35.png){fig-align="center" width="579"}
+![The PCA result in Delhi](Screenshot%202024-03-14%20at%2012.45.35.png){fig-align="center" width="579"}
 
-![The percentage of variance of each PC](Screenshot 2024-03-14 at 12.52.19.png){fig-align="center" width="167"}
+![The percentage of variance of each PC](Screenshot%202024-03-14%20at%2012.52.19.png){fig-align="center" width="167"}
 
 ## Application
 
+Google Earth Engine (GEE) is widely used in the analysis of land cover, water resource, vegetation cover, etc ([Zhao et al., 2021](https://www.mdpi.com/2072-4292/13/18/3778)). It a powerful online platform that combines big data and time-series analysis with geospatial study. As large amount of data could be directly called as image and feature collection on the GEE, 90% of researchers utilize the remote sensing datasets in their study, while 10% of scholars would use existed product for their analysis, and an overall accuracy of 70% to 99% was achieved ([Tamiminia et al, 2020](https://www.sciencedirect.com/science/article/pii/S0924271620300927?casa_token=ov7EtMsEUP0AAAAA:1goUpgMfauidkCIbsygXtu3Tv-jSY8TJrxp8zhlIE0XtTOmogrh_JH952Dm_fsQuq6zhj_1966M)).
+
+While GEE is applied in many Earth observation topics, here are two examples of its applications.
+
+### **Collect Earth**
+
+Collect Earth is open-source software for monitoring land use variation, which is developed by the Food and Agriculture Organization of the United Nations (FAO) ([Bey et al., 2016](https://www.mdpi.com/2072-4292/8/10/807)). It is based on a combination of Google Earth, Bing Maps and GEE. Users can observe land use in Google Earth, and they can implement more analysis with a longer time range and high image resolution in conjunction with GEE and Bing Maps ([Collect Earth](https://openforis.org/solutions/collect-earth/)).
+
 ### Global Water Watch
 
-This project allows globally access, which aims to share the information of small and median water reservoirs. They argued that water resource is crucial from living, but more than half of population in the world are in the countries that share river basin with other countries. This means, the competition of water use between countries would potentially increase the conflict, therefore it is more important to break information barriers and co-manage the water resource (source: [GWW](https://www.globalwaterwatch.earth/blog/four-ways-open-reservoir-data-can-support-transboundary-peacekeeping)).
+As one of a ready-to-use product basd on GEE, this project allows globally access, which aims to share the information of small and median water reservoirs. They argued that water resource is crucial from living, but more than half of population in the world are in the countries that share river basin with other countries. This means, the competition of water use between countries would potentially increase the conflict, therefore it is more important to break information barriers and co-manage the water resource (source: [GWW](https://www.globalwaterwatch.earth/blog/four-ways-open-reservoir-data-can-support-transboundary-peacekeeping)).
 
-### 
+The screen shot shows the the app they created in GEE (access from [here](https://gena.users.earthengine.app/view/water-watch)):
+
+![](Screenshot%202024-03-14%20at%2017.31.45.png){fig-align="center" width="624"}
+
+I randomly selected a water reservoir in Riyadh, Saudi Arabia, and the app can show the historical variation of surface water. However, since there are many layers in this GEE app, the loading speed would be slow. It's more convenient to access their [website](https://www.globalwaterwatch.earth/) to obtain water resource information.
 
 ## Reflection
 
 ### Loop vs. Map
 
-Since GEE use JavaScript to edit the code, using `map` function to do the iteration could be more efficient in terms of code writing and code running. By using `map`, we don't have to count the number of objects (images) in the collection, but it will apply the function to each object. [Crites (2018)](https://medium.com/@ExplosionPills/map-vs-for-loop-2b4ce659fb03) argued that it's called "true iteration", though I don't think so, as both function could achieve the same result. However, using `map` can actually make the code cleaner.
+Since GEE use JavaScript to edit the code, using `map` function to do the iteration could be more efficient in terms of code writing and code running. By using `map`, we don't have to count the number of objects (images) in the collection, but it will apply the function to each object. [Crites (2019)](https://medium.com/@ExplosionPills/map-vs-for-loop-2b4ce659fb03) argued that it's called "true iteration", though I don't think so, as both function could achieve the same result. However, using `map` can actually make the code cleaner.
+
+## Reference
+
+[Crites, A. (2019) Map vs. for loop, Medium. Available at: https://medium.com/\@ExplosionPills/map-vs-for-loop-2b4ce659fb03 (Accessed: 14 March 2024).](https://medium.com/@ExplosionPills/map-vs-for-loop-2b4ce659fb03)
+
+Tamiminia, H., Salehi, B., Mahdianpari, M., Quackenbush, L., Adeli, S. and Brisco, B., 2020. Google Earth Engine for geo-big data applications: A meta-analysis and systematic review. *ISPRS journal of photogrammetry and remote sensing*, *164*, pp.152-170.
+
+Zhao, Q., Yu, L., Li, X., Peng, D., Zhang, Y. and Gong, P., 2021. Progress and trends in the application of Google Earth and Google Earth Engine. *Remote Sensing*, *13*(18), p.3778.
+
+[(2023) Global Water Watch. Available at: https://www.globalwaterwatch.earth/ (Accessed: 14 March 2024).](https://www.globalwaterwatch.earth/)

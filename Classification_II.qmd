@@ -1,0 +1,43 @@
+---
+title: "Classification_II"
+---
+
+### Terms
+
+ROC: Receiver Operating Characteristic Curves
+
+AUC: Area Under the Curve
+
+## Summary
+
+[Dynamic World](https://www.dynamicworld.app/explore) dataset provides nearly real time land cover data, which has 10-meter resolution (also it's an application of GEE!). This is an example of pre-trained Earth observation dataset, which might be great when it is applied in globally land cover study. However, when it is applied on locally study, it might be not accurate enough, as more specific information may need in this case. For example, in a local study the OBIA or sub pixel analysis could be applied. This may require a shapefile of local object, i.e. buildings, or spectral information in a pixel unit, etc.
+
+### Accuracy
+
+*Confusion matrix*, basically shows how one class may be confused for another ([Wilber, 2022](https://mlu-explain.github.io/precision-recall/)). This is used to record the performance of a classification. In stead of directly using overall accuracy, there are *Recall* and *Precision* that describe a typical accuracy more precisely. The Recall focus on preventing False Positive, while Precision focus on avoiding False Negative. This means, choosing which value get higher depends on the importance of the value, since sometimes we need to have a trade-off between them. For instance, if we want to make sure that the detection of one land cover, i.e. forest, is actually forest (high Precision, low False Positive), we may need to give up identifying a part of forest that may look less likely to be a forest (low Recall, high False Negative).
+
+To quantify this trade-off process, we can use F1-Score to compare the overall balance of Recall and Precision. To measure and visualize the impact of the chagne of threshold, ROC plot could be helpful. Moreover, AUC could be used to compare different algorithm.
+
+### Practical result
+
+The figures below is the result of sub pixel analysis. I gather the endmembers by drawing polygon in the region. In the unmixing process, the figure before and after the constraint is quite different, which means the endmembers doesn't perform well and some classes cannot be found in some pixels, which leads to negative fractions ([ArcGIS](https://doc.arcgis.com/en/arcgis-online/analyze/linear-spectral-unmixing.htm)).
+
+![unmix, no constraint](Screenshot 2024-03-20 at 02.05.57.png){fig-align="center"}
+
+![unmix, constraint](Screenshot 2024-03-20 at 02.05.38.png){fig-align="center" width="540"}
+
+By comparing two constraint level, it would be found that setting the band constraint over .7 might have better performance, as it's more similar as the sattelite image.
+
+![band \> 0.5, blue: urban, pale: grass, green: forest, pink: bare earth](Screenshot 2024-03-20 at 00.04.24.png){fig-align="center" width="495"}
+
+![band \> 0.7](Screenshot 2024-03-20 at 00.04.15.png){alt="constrain > 0.7" fig-align="center" width="501"}
+
+## Application
+
+Simple Linear Iterative Clustering (SLIC) algorithm
+
+SegOptim
+
+## 
+
+## Reflection

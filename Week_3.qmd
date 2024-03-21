@@ -45,7 +45,7 @@ Tasseled Cap function -\> Principal Component Analysis (PCA)
 
 The PCA is a process that transform the data which has reduced its dimensionality. This is to highlight certain feature of an image.
 
-## Application
+## 
 
 ### Data Pre-process 
 
@@ -81,6 +81,14 @@ According to the division, the leaf condition could be detected in Cape Town:
 
 The figures show that few health leaf in the Cape Town, probably because the time period of the data is around May, when it's close to winter in the Southern Hemisphere.
 
+## Application
+
+PCA is a useful tool to reduce the noise for remote sensing data. [Uddin, Mamun, & Hossain (2021)](https://www.tandfonline.com/doi/full/10.1080/02564602.2020.1740615?casa_token=F3iyWCbKBg8AAAAA%3Ax_TCwBe5_B3Ivy1knsMABOXv2ODgUYbqDRcfUs7gjgKPoyXzjxErPL8q2bCjU7a2TeLzHxieg8DiDQ) concluded that PCA-based feature reduction could be efficient for hyperspectral image ([HSI](https://www.nireos.com/hyperspectral-imaging/)) classification, and they assessed the performance by using a Support Vector Machine (SVM) classifier. Since HSI contains more bands than normal color images, reduce uneccessary information would enhance the accuracy of classification.
+
+![The workflow for PCA-based HSI classification ([Uddin, Mamun, & Hossain, 2021](https://www.tandfonline.com/doi/full/10.1080/02564602.2020.1740615?casa_token=F3iyWCbKBg8AAAAA%3Ax_TCwBe5_B3Ivy1knsMABOXv2ODgUYbqDRcfUs7gjgKPoyXzjxErPL8q2bCjU7a2TeLzHxieg8DiDQ))](Screenshot 2024-03-21 at 03.02.06.png){fig-align="center" width="600"}
+
+However, only two dataset they used for analysis might not be sufficient, as particular place might has its occasionality in terms of atmosphere condition, surface structure, etc.
+
 ## Reflection
 
 There are other ways to process and enhance the remote sensing data, and substantially they are used to reduce the amount of data.
@@ -92,5 +100,7 @@ Comparing to directly process the data, Principle Component Analysis (PCA) is a 
 ![The data has few variation in Z axis, therefore, Z dimension could be subtracted](1_NG0-jH0M-va1Uk-llps-wQ.webp){fig-align="center" width="496"}
 
 ### Reference
+
+Uddin, M.P., Mamun, M.A. and Hossain, M.A., 2021. PCA-based feature reduction for hyperspectral remote sensing image classification. *IETE Technical Review*, *38*(4), pp.377-396.
 
 ### 

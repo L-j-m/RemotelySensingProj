@@ -13,6 +13,9 @@ book:
     - Week_3.qmd
     - Week_4.qmd
     - GEE.qmd
+    - Classification_I.qmd
+    - Classification_II.qmd
+    - SAR.qmd
     - summary.qmd
     - references.qmd
 

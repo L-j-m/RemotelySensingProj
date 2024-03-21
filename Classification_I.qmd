@@ -1,0 +1,89 @@
+---
+title: "Classification_I"
+---
+
+## Summary
+
+### Terms
+
+LULC: Land Use & Land Cover
+
+LST: Land Surface Temperature
+
+MAP: Major Air Pollutants
+
+CART: Classification and Regression Trees
+
+RF: Random Forest
+
+### How classified data could be used
+
+-   Urban expansion
+
+-   Air pollution
+
+-   LULC
+
+-   Forest monitoring (illegal logging; forest fire)
+
+### Machine Leaning in Remote Sensing
+
+The application of machine learning in remote sensing is a kind of inductive learning, which import the knowledge from human (expert) to an algorithm system, and it could iteratively generate advice for particular problem. Essentially, the machine learning is to help making decision repeatedly. To simplify, regression could be a type of machine learning, as it can obtain the information from the fitted data, and than it can be used to make prediction based on the fitted data.
+
+### CART
+
+The CART comprised of classification trees and regression trees.
+
+-   Classification tree: Classify the data into different discrete categories (predict category)
+
+-   Regression tree: subset continuous data and do the regression separately (predict value, or value range)
+
+To decide which variable should be used in the top of a classification tree, the Gini impurity of each variable should be calculated, and that with the lowest Gini impurity should be selected. Then, each extension of decision tree (adding the height) is to reduce the impurity of a branch. In this process, we can also compare the impurity of the rest of variables and repeat the first step.
+
+As for regression tree, there is a similar impurity but it's measured by the residual of values. We can make a plot of sum of squared residuals (SSR) verses threshold to find the threshold with the lowest SSR, then create the tree. However, since the data set of regression tree is continue and we can't keep finding the lowest SSR in each branch, therefore, to prevent overfitting, we could set a certain number of observations that would stop the division.
+
+![plot of sum of squared residuals (SSR) verses threshold, from [SatQuest](https://www.youtube.com/watch?v=g9c66TUylZ4)](Screenshot 2024-03-16 at 02.33.23.png){fig-align="center"}
+
+### Random Forest
+
+This algorithm could be concluded as *Bagging,* which means bootstrapping the data and using aggregate to make a decision (b + agg = bagging). Since a part of (about 1/3) data would be omitted in the first bagging process, those are called Out-of-Bag data, and these data would be used to test the accuracy of each tree that produced by random forest.
+
+### Support Vector Machine
+
+The Support Vector Machine (SVM) derives from Support Vector Classifier, which is a threshold that divide data into two categories in one-dimension. In terms of SVM, the idea is to add dimension to the data, so that a mixed up dataset can also be classified. However, in effect the data wasn't actually transformed into a higher dimension due to computational limitation, therefore, it is using either of two kernel functions: polynomial kernel or radial kernel, to do the *kernel trick.* In other words, it is to use mathemmtical techniques to reduce computational complexity. (sounds confused but it's true!)
+
+### Practical result
+
+Since GEE allows limit elements in each FeatureCollection, I reduce to two types of landcover for the classification. The figure below demonstrates the result and accuracy, using pixel as training data and RF as the algorithm.
+
+![The result of two landcovers (low urban building and bare earth); blue refers to buildings, pink is the bare earth](Screenshot 2024-03-19 at 16.00.01.png){fig-align="center"}
+
+![The overall accuracy and consumer accuracy; 1 is low urban building, 2 is bare earth](Screenshot 2024-03-19 at 15.24.05.png){fig-align="center" width="449"}
+
+In this classification, the useful result might be the classification of bare earth, because this is a kind of binary classification so the type of land cover would be either one of the two types. Therefore, those pixels that are more similar to the buildings would be classified as low urban building, though it might not actually is.
+
+To improve this problem and locate the place that actually is its type, I created a third class which is used for distinguish other two classes of land cover.
+
+![The result with three types of land cover, blue refers to buildings, pink is the bare earth, and pale is grass or forest. It shows that most of area in Shenzhen are urban, mixed with some underdeveloped bare earth, and the green are mainly located in the middle of west part and the south east part.](Screenshot 2024-03-19 at 15.50.42.png)
+
+![The accuracy of three-class classification](Screenshot 2024-03-19 at 15.55.08.png){fig-align="center" width="398"}
+
+The overall accuracy seems higher than the previous one, but there is an over-fitted class, which is the green area, so this is a fake high accuracy. Nevertheless, our purpose is to separate non-building and non-bare-earth area, so it is done well. The reason for over-fitting is that the area I selected for training green was the grass on the school playground, which has limit pixels. Therefore, in the train-test-split process, those pixel could not be well separated.
+
+## Application
+
+Essentially, the classification technique in remote sensing is to assign the land cover type to image pixels ([GISGeography](https://gisgeography.com/image-classification-techniques-remote-sensing/)). There are generally three types of classifications:
+
+-   Unsupervised classification
+
+-   Supervised classification
+
+-   Object-Based image analysis (OBIA)
+
+The first two is used for low spatial resolution images, and the third is used for high spatial resolution images.
+
+## 
+
+## Reflection
+
+I found [StatQuest](https://www.youtube.com/@statquest) is a really, really helpful channel which solve nearly all of my questions, and the author even go deeper for that to explain more clearly.
