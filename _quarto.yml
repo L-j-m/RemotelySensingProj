@@ -16,8 +16,6 @@ book:
     - Classification_I.qmd
     - Classification_II.qmd
     - SAR.qmd
-    - summary.qmd
-    - references.qmd
 
 bibliography: references.bib
 

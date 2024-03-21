@@ -1,8 +1,6 @@
 ---
-title: "GEE"
+title: "Google Earth Engine"
 ---
-
-# Google Earth Engine
 
 ## Summary
 

@@ -1,8 +1,6 @@
 ---
-title: "Week_4 Policy"
+title: "Policy"
 ---
-
-# Policy
 
 ## Summary
 

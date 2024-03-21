@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning Diary of CASA0023 Remotely Sensing Cities and Environments 23/24 - 5&nbsp; GEE</title>
+<title>Learning Diary of CASA0023 Remotely Sensing Cities and Environments 23/24 - 5&nbsp; Google Earth Engine</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./GEE.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GEE</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./GEE.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -126,13 +126,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week_4 Policy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4 Policy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./GEE.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GEE</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -175,25 +175,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#google-earth-engine" id="toc-google-earth-engine" class="nav-link active" data-scroll-target="#google-earth-engine"><span class="header-section-number">6</span> Google Earth Engine</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a>
+  <li><a href="#object" id="toc-object" class="nav-link" data-scroll-target="#object"><span class="header-section-number">5.1.1</span> Object</a></li>
+  <li><a href="#data-process-in-gee" id="toc-data-process-in-gee" class="nav-link" data-scroll-target="#data-process-in-gee"><span class="header-section-number">5.1.2</span> Data process in GEE</a></li>
+  <li><a href="#pca-in-gee" id="toc-pca-in-gee" class="nav-link" data-scroll-target="#pca-in-gee"><span class="header-section-number">5.1.3</span> PCA in GEE</a></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">5.2</span> Application</a>
   <ul class="collapse">
-  <li><a href="#object" id="toc-object" class="nav-link" data-scroll-target="#object"><span class="header-section-number">6.1.1</span> Object</a></li>
-  <li><a href="#data-process-in-gee" id="toc-data-process-in-gee" class="nav-link" data-scroll-target="#data-process-in-gee"><span class="header-section-number">6.1.2</span> Data process in GEE</a></li>
-  <li><a href="#pca-in-gee" id="toc-pca-in-gee" class="nav-link" data-scroll-target="#pca-in-gee"><span class="header-section-number">6.1.3</span> PCA in GEE</a></li>
+  <li><a href="#collect-earth" id="toc-collect-earth" class="nav-link" data-scroll-target="#collect-earth"><span class="header-section-number">5.2.1</span> <strong>Collect Earth</strong></a></li>
+  <li><a href="#global-water-watch" id="toc-global-water-watch" class="nav-link" data-scroll-target="#global-water-watch"><span class="header-section-number">5.2.2</span> Global Water Watch</a></li>
   </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">6.2</span> Application</a>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5.3</span> Reflection</a>
   <ul class="collapse">
-  <li><a href="#collect-earth" id="toc-collect-earth" class="nav-link" data-scroll-target="#collect-earth"><span class="header-section-number">6.2.1</span> <strong>Collect Earth</strong></a></li>
-  <li><a href="#global-water-watch" id="toc-global-water-watch" class="nav-link" data-scroll-target="#global-water-watch"><span class="header-section-number">6.2.2</span> Global Water Watch</a></li>
+  <li><a href="#loop-vs.-map" id="toc-loop-vs.-map" class="nav-link" data-scroll-target="#loop-vs.-map"><span class="header-section-number">5.3.1</span> Loop vs.&nbsp;Map</a></li>
   </ul></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> Reflection</a>
-  <ul class="collapse">
-  <li><a href="#loop-vs.-map" id="toc-loop-vs.-map" class="nav-link" data-scroll-target="#loop-vs.-map"><span class="header-section-number">6.3.1</span> Loop vs.&nbsp;Map</a></li>
-  </ul></li>
-  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">6.4</span> Reference</a></li>
-  </ul></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">5.4</span> Reference</a></li>
   </ul>
 </nav>
     </div>
@@ -202,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GEE</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></h1>
 </div>
 
 
@@ -217,22 +214,20 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="google-earth-engine" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Google Earth Engine</h1>
-<section id="summary" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
+<section id="summary" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
 <p>The Google Earth Engine (GEE) is an online geospatial platform that allow geoanalyst to access Google server to do the spatial analysis.</p>
 <p>As the platform has a large remote sensing database, our computer doesn’t have to actually load the data when running the code, instead, it could call the data as a proxy in the code script, which save the room in the local computer.</p>
-<section id="object" class="level3" data-number="6.1.1">
-<h3 data-number="6.1.1" class="anchored" data-anchor-id="object"><span class="header-section-number">6.1.1</span> Object</h3>
+<section id="object" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="object"><span class="header-section-number">5.1.1</span> Object</h3>
 <p>The object in GEE is like the data structures in other programming language. Each object belongs to specific class, and each class has its specific functions (methods).</p>
 </section>
-<section id="data-process-in-gee" class="level3" data-number="6.1.2">
-<h3 data-number="6.1.2" class="anchored" data-anchor-id="data-process-in-gee"><span class="header-section-number">6.1.2</span> Data process in GEE</h3>
+<section id="data-process-in-gee" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="data-process-in-gee"><span class="header-section-number">5.1.2</span> Data process in GEE</h3>
 <p>GEE can filter specific image from image collections by its date, and clip the map to generate targeted study area. It can also do texture analysis and PCA.</p>
 </section>
-<section id="pca-in-gee" class="level3" data-number="6.1.3">
-<h3 data-number="6.1.3" class="anchored" data-anchor-id="pca-in-gee"><span class="header-section-number">6.1.3</span> PCA in GEE</h3>
+<section id="pca-in-gee" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="pca-in-gee"><span class="header-section-number">5.1.3</span> PCA in GEE</h3>
 <p>The result of PCA in GEE illustrate that there are two main geographic components in this region, as the first two PCs added up to around 93% of variance which is used to describe the importance of the geographical data.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -248,16 +243,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 </section>
-<section id="application" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
+<section id="application" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
 <p>Google Earth Engine (GEE) is widely used in the analysis of land cover, water resource, vegetation cover, etc (<a href="https://www.mdpi.com/2072-4292/13/18/3778">Zhao et al., 2021</a>). It a powerful online platform that combines big data and time-series analysis with geospatial study. As large amount of data could be directly called as image and feature collection on the GEE, 90% of researchers utilize the remote sensing datasets in their study, while 10% of scholars would use existed product for their analysis, and an overall accuracy of 70% to 99% was achieved (<a href="https://www.sciencedirect.com/science/article/pii/S0924271620300927?casa_token=ov7EtMsEUP0AAAAA:1goUpgMfauidkCIbsygXtu3Tv-jSY8TJrxp8zhlIE0XtTOmogrh_JH952Dm_fsQuq6zhj_1966M">Tamiminia et al, 2020</a>).</p>
 <p>While GEE is applied in many Earth observation topics, here are two examples of its applications.</p>
-<section id="collect-earth" class="level3" data-number="6.2.1">
-<h3 data-number="6.2.1" class="anchored" data-anchor-id="collect-earth"><span class="header-section-number">6.2.1</span> <strong>Collect Earth</strong></h3>
+<section id="collect-earth" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="collect-earth"><span class="header-section-number">5.2.1</span> <strong>Collect Earth</strong></h3>
 <p>Collect Earth is open-source software for monitoring land use variation, which is developed by the Food and Agriculture Organization of the United Nations (FAO) (<a href="https://www.mdpi.com/2072-4292/8/10/807">Bey et al., 2016</a>). It is based on a combination of Google Earth, Bing Maps and GEE. Users can observe land use in Google Earth, and they can implement more analysis with a longer time range and high image resolution in conjunction with GEE and Bing Maps (<a href="https://openforis.org/solutions/collect-earth/">Collect Earth</a>).</p>
 </section>
-<section id="global-water-watch" class="level3" data-number="6.2.2">
-<h3 data-number="6.2.2" class="anchored" data-anchor-id="global-water-watch"><span class="header-section-number">6.2.2</span> Global Water Watch</h3>
+<section id="global-water-watch" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="global-water-watch"><span class="header-section-number">5.2.2</span> Global Water Watch</h3>
 <p>As one of a ready-to-use product basd on GEE, this project allows globally access, which aims to share the information of small and median water reservoirs. They argued that water resource is crucial from living, but more than half of population in the world are in the countries that share river basin with other countries. This means, the competition of water use between countries would potentially increase the conflict, therefore it is more important to break information barriers and co-manage the water resource (source: <a href="https://www.globalwaterwatch.earth/blog/four-ways-open-reservoir-data-can-support-transboundary-peacekeeping">GWW</a>).</p>
 <p>The screen shot shows the the app they created in GEE (access from <a href="https://gena.users.earthengine.app/view/water-watch">here</a>):</p>
 <div class="quarto-figure quarto-figure-center">
@@ -268,22 +263,21 @@ ul.task-list li input[type="checkbox"] {
 <p>I randomly selected a water reservoir in Riyadh, Saudi Arabia, and the app can show the historical variation of surface water. However, since there are many layers in this GEE app, the loading speed would be slow. It’s more convenient to access their <a href="https://www.globalwaterwatch.earth/">website</a> to obtain water resource information.</p>
 </section>
 </section>
-<section id="reflection" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
-<section id="loop-vs.-map" class="level3" data-number="6.3.1">
-<h3 data-number="6.3.1" class="anchored" data-anchor-id="loop-vs.-map"><span class="header-section-number">6.3.1</span> Loop vs.&nbsp;Map</h3>
+<section id="reflection" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
+<section id="loop-vs.-map" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="loop-vs.-map"><span class="header-section-number">5.3.1</span> Loop vs.&nbsp;Map</h3>
 <p>Since GEE use JavaScript to edit the code, using <code>map</code> function to do the iteration could be more efficient in terms of code writing and code running. By using <code>map</code>, we don’t have to count the number of objects (images) in the collection, but it will apply the function to each object. <a href="https://medium.com/@ExplosionPills/map-vs-for-loop-2b4ce659fb03">Crites (2019)</a> argued that it’s called “true iteration”, though I don’t think so, as both function could achieve the same result. However, using <code>map</code> can actually make the code cleaner.</p>
 </section>
 </section>
-<section id="reference" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">6.4</span> Reference</h2>
+<section id="reference" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">5.4</span> Reference</h2>
 <p><a href="https://medium.com/@ExplosionPills/map-vs-for-loop-2b4ce659fb03">Crites, A. (2019) Map vs.&nbsp;for loop, Medium. Available at: https://medium.com/@ExplosionPills/map-vs-for-loop-2b4ce659fb03 (Accessed: 14 March 2024).</a></p>
 <p>Tamiminia, H., Salehi, B., Mahdianpari, M., Quackenbush, L., Adeli, S. and Brisco, B., 2020. Google Earth Engine for geo-big data applications: A meta-analysis and systematic review. <em>ISPRS journal of photogrammetry and remote sensing</em>, <em>164</em>, pp.152-170.</p>
 <p>Zhao, Q., Yu, L., Li, X., Peng, D., Zhang, Y. and Gong, P., 2021. Progress and trends in the application of Google Earth and Google Earth Engine. <em>Remote Sensing</em>, <em>13</em>(18), p.3778.</p>
 <p><a href="https://www.globalwaterwatch.earth/">(2023) Global Water Watch. Available at: https://www.globalwaterwatch.earth/ (Accessed: 14 March 2024).</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -523,7 +517,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./Week_4.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week_4 Policy</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4 Policy</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
