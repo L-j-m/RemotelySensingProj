@@ -2,7 +2,7 @@
 title: "Data Enhancement"
 ---
 
-## Terms {.unnumbered}
+### Terms {.unnumbered}
 
 -   .MTL file: store the data of Earth-sun distance.
 -   NDVI (Normalised Difference Vegetation Index).
@@ -98,5 +98,7 @@ Comparing to directly process the data, Principle Component Analysis (PCA) is a 
 ![The data has few variation in Z axis, therefore, Z dimension could be subtracted](1_NG0-jH0M-va1Uk-llps-wQ.webp){fig-align="center" width="496"}
 
 ## Reference
+
+Kim, H.G. (2022) *Cracking principal components analysis (PCA) - part 1*, *Medium*. Available at: https://grantkim94.medium.com/cracking-principal-components-analysis-pca-part-1-1372736ebac7 (Accessed: 22 March 2024).
 
 Uddin, M.P., Mamun, M.A. and Hossain, M.A., 2021. PCA-based feature reduction for hyperspectral remote sensing image classification. *IETE Technical Review*, *38*(4), pp.377-396.

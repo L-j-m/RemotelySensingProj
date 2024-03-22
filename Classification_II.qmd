@@ -38,8 +38,6 @@ Simple Linear Iterative Clustering (SLIC) algorithm has the advantage of process
 
 I found a review from [Maxwell, Warner, & Guillen (2021)](https://www.mdpi.com/2072-4292/13/13/2450), and they summarize the application of frequently used accuracy measurement among traditional RS and Deep Learning RS. They found that although some difference of accuracy measurement between them, for example, the DL RS researcher would use Intersection-over-Union ([IoU](https://stats.stackexchange.com/questions/273537/f1-dice-score-vs-iou)) to measure the accuracy, generally it is a different expression or emphasis rather than an entirely new thing. Therefore, even though neural network makes the analyzing process hard to be understanded, in an engineering perspective, as long as the accuracy is high, it could be a better algorithm.
 
-## 
-
 ## Reflection
 
 The practical in this week generated lots of layers, which impressed me that there are so many way to express the information of a ground surface. Also, two continuous machine learning lectures makes me "over-fitting" --- try to memorize everything! But understanding them may take more time.
