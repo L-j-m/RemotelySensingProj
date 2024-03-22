@@ -172,6 +172,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.2</span> Application</a></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">7.3</span> </a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.4</span> Reflection</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">7.5</span> <strong>Reference</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -240,14 +241,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
-<p>Simple Linear Iterative Clustering (SLIC) algorithm</p>
-<p>SegOptim</p>
+<p>Simple Linear Iterative Clustering (SLIC) algorithm has the advantage of processing time-constraint events. <a href="https://www.mdpi.com/2072-4292/9/3/243">Csillik (2017)</a> combined RF and SLIC to improve the processing speed and accuracy of pixel-level detection. The study found that the SLIC algorithm has a higher accuracy for capturing targets comparing to traditional object-based method.</p>
+<p>I found a review from <a href="https://www.mdpi.com/2072-4292/13/13/2450">Maxwell, Warner, &amp; Guillen (2021)</a>, and they summarize the application of frequently used accuracy measurement among traditional RS and Deep Learning RS. They found that although some difference of accuracy measurement between them, for example, the DL RS researcher would use Intersection-over-Union (<a href="https://stats.stackexchange.com/questions/273537/f1-dice-score-vs-iou">IoU</a>) to measure the accuracy, generally it is a different expression or emphasis rather than an entirely new thing. Therefore, even though neural network makes the analyzing process hard to be understanded, in an engineering perspective, as long as the accuracy is high, it could be a better algorithm.</p>
 </section>
 <section id="section" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="section"><span class="header-section-number">7.3</span> </h2>
 </section>
 <section id="reflection" class="level2" data-number="7.4">
 <h2 data-number="7.4" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.4</span> Reflection</h2>
+<p>The practical in this week generated lots of layers, which impressed me that there are so many way to express the information of a ground surface. Also, two continuous machine learning lectures makes me “over-fitting” — try to memorize everything! But understanding them may take more time.</p>
+<p>I found the accuracy measurement could be a life saver for me, since the terminologies are relatively easy to understand. Moreover, after running the classification algorithm, I can simply check the accuracy to decide whether its a good result. That’s an easy workflow! However, I believe that I should try to learn more about the knowledge of machine learning, as, well, it’s cool.</p>
+</section>
+<section id="reference" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="reference"><span class="header-section-number">7.5</span> <strong>Reference</strong></h2>
+<p>Csillik, O., 2017. Fast segmentation and classification of very high resolution remote sensing data using SLIC superpixels. <em>Remote Sensing</em>, <em>9</em>(3), p.243.</p>
+<p><em>Dynamic World - 10M Global Land Cover Dataset in Google Earth engine</em> (no date) <em>Dynamic World - 10m global land cover dataset in Google Earth Engine</em>. Available at: https://www.dynamicworld.app/explore/ (Accessed: 22 March 2024).</p>
+<p><em>Linear spectral unmixing function</em> (no date) <em>Linear Spectral Unmixing function-ArcGIS Online | Documentation</em>. Available at: https://doc.arcgis.com/en/arcgis-online/analyze/linear-spectral-unmixing.htm (Accessed: 22 March 2024).</p>
+<p>Maxwell, A.E., Warner, T.A. and Guillén, L.A., 2021. Accuracy assessment in convolutional neural network-based deep learning remote sensing studies—Part 1: Literature review. <em>Remote Sensing</em>, <em>13</em>(13), p.2450.</p>
+<p>Wilber, J. (no date) <em>Precision and recall</em>, <em>MLU</em>. Available at: https://mlu-explain.github.io/precision-recall/ (Accessed: 22 March 2024).</p>
 
 
 </section>

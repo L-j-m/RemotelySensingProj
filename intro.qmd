@@ -40,8 +40,6 @@ The two types below is more about SAR data.
 
 -   Fluoresence: The wavelength of radiation would change after arriving the target.
 
-## 
-
 ### Practical Result
 
 For the practical, I selected five points for analysis:
@@ -68,7 +66,7 @@ When doing the comparison of Sentinel and Landsat data set, the image from Senti
 
 The component of target within a pixel can be analyzed from Spectrum View (in SNAP), in which x axis is the Wavelength (nm) of bands, y axis is the percentage of reflectance.
 
-### Reference
+## Reference
 
 Navalgund, R.R., Jayaraman, V. and Roy, P.S., 2007. Remote sensing applications: An overview. *current science*, pp.1747-1766.
 

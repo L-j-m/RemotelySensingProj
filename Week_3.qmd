@@ -45,8 +45,6 @@ Tasseled Cap function -\> Principal Component Analysis (PCA)
 
 The PCA is a process that transform the data which has reduced its dimensionality. This is to highlight certain feature of an image.
 
-## 
-
 ### Data Pre-process 
 
 A problem of remote sensing data is that the area of one image may not cover the entire study area, as the satellites are moving relative to the ground and scan the land square by square. The date of different data square would be varied. Therefore, to obtain the ground information of whole study area, the data should be accessed over a period of time. Then, the images should be merged together to form the targeted area.
@@ -99,8 +97,6 @@ Comparing to directly process the data, Principle Component Analysis (PCA) is a 
 
 ![The data has few variation in Z axis, therefore, Z dimension could be subtracted](1_NG0-jH0M-va1Uk-llps-wQ.webp){fig-align="center" width="496"}
 
-### Reference
+## Reference
 
 Uddin, M.P., Mamun, M.A. and Hossain, M.A., 2021. PCA-based feature reduction for hyperspectral remote sensing image classification. *IETE Technical Review*, *38*(4), pp.377-396.
-
-### 
